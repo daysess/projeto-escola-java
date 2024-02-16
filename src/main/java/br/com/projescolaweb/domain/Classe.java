@@ -1,10 +1,14 @@
 package br.com.projescolaweb.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -22,7 +26,16 @@ public class Classe {
 	@Column(name = "ano_letivo")
 	private String anoLetivo;
 	
-
+	@OneToMany(mappedBy = "id.classe")
+	private List<ClasseProfessor> professores = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "id.classe")
+	private List<ClasseAluno> alunos = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "id.classe")
+	private List<ClasseMateria> materias = new ArrayList<>();
+	
+	
 	public Classe() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -68,6 +81,40 @@ public class Classe {
 		this.anoLetivo = anoLetivo;
 	}
 	
+	
+
+	public List<ClasseProfessor> getProfessores() {
+		return professores;
+	}
+
+	public List<ClasseAluno> getAlunos() {
+		return alunos;
+	}
+
+	public List<ClasseMateria> getMaterias() {
+		return materias;
+	}
+
+	@Override
+	public String toString() {
+		String stringProfessores = "";
+		String stringAlunos = "";
+		String stringMaterias = "";
+		for (ClasseProfessor p : professores) {
+			stringProfessores += "[nrCpfProfessor="+ p.getId().getNrCpfProfessor() +"] ";
+		}
+		
+		for (ClasseAluno a : alunos) {
+			stringAlunos += "[idAluno="+a.getId().getIdAluno()+"] ";
+		}
+		
+		for (ClasseMateria m : materias) {
+			stringMaterias += "[matérias="+m.getId().getIdMateria()+"] ";
+		}
+		return "CLASSE [id=" + id + ", nome=" + nome + ", serie=" + serie + ", anoLetivo=" + anoLetivo
+				+ ", professores=" + stringProfessores + ", alunos=" + stringAlunos + ", matérias="+ stringMaterias + "]";
+	}
+
 	
 	
 }

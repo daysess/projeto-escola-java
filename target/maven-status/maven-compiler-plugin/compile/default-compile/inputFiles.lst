@@ -1,6 +1,8 @@
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/model/service/ClasseService.java
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/model/dao/ClasseDao.java
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/controller/ClasseController.java
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/domain/Classe.java
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/ProjEscolaWebApplication.java
-/home/daysesantos/Documentos/workspace/java/projEscolaWeb/src/main/java/br/com/projescolaweb/controller/HomeController.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/model/service/ClasseService.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/domain/ClasseProfessorPK.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/controller/HomeController.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/domain/ClasseProfessor.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/domain/Classe.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/ProjEscolaWebApplication.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/controller/ClasseController.java
+/home/daysesantos/Documentos/workspace/java/projeto-escola-java/src/main/java/br/com/projescolaweb/model/dao/ClasseDao.java
